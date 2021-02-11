@@ -3,7 +3,7 @@ const breed = process.argv[2];
 // console.log(breed);
 
 const fetchBreed = function (breed) {
-  const url = `https://api.thecatapiii.com/v1/breeds/search?q=${breed}`;
+  const url = `https://api.thecatapi.com/v1/breeds/search?q=${breed}`;
 
   request(url, (error, response, body) => {
     if (error) {
